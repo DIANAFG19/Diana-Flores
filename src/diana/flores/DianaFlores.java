@@ -17,12 +17,15 @@ public class DianaFlores {
     public static void main(String[] args) {
         System.out.println("HOLA MUNDO CRUEL");
         
+        NewJFrame f = new NewJFrame();
+        f.setVisible(true);
+        
         //Probaremos nuestra solucion
         //Crear un usuaio hipotetico
         Usuario u = new Usuario();
         
         //Le asignamos valores
-        u.altura = 1.68f;
+        u.altura = 50f;
         u.peso = 73f;
         
         //Generamos el modelo
