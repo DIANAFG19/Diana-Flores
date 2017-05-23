@@ -33,5 +33,4 @@ public class DianaFlores {
         
         System.out.println("El valor del IMC es " + imc.calcular(u));
     }
-    
 }
