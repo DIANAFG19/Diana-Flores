@@ -10,7 +10,9 @@ package diana.flores;
  * @author YOO
  */
 public class NewJFrame extends javax.swing.JFrame {
-
+    String textoPeso;
+    String textoAltura;
+   
     /**
      * Creates new form NewJFrame
      */
@@ -116,8 +118,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void botonCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCalcularActionPerformed
         // TODO add your handling code here:
-        String tPeso = textoPeso.getText();
-        String tAltura = textoAltura.getText();
+       
         //Comvertir a flotante
         float peso = Float.parseFloat(tPeso);
         float altura = Float.parseFloat(tAltura);
