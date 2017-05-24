@@ -15,8 +15,7 @@ public class DianaFlores {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("HOLA MUNDO CRUEL");
-        
+               
         NewJFrame f = new NewJFrame();
         f.setVisible(true);
         

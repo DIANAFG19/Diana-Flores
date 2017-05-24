@@ -7,7 +7,7 @@ package diana.flores;
 
 /**
  *
- * @author T-
+ * @author YOO
  */
 public class NewJFrame extends javax.swing.JFrame {
 
