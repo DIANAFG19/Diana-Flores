@@ -21,15 +21,10 @@ public class DianaFlores {
         
         //Probaremos nuestra solucion
         //Crear un usuaio hipotetico
-        Usuario u = new Usuario();
         
         //Le asignamos valores
-        u.altura = 50f;
-        u.peso = 73f;
-        
+      
         //Generamos el modelo
-        Imc imc = new Imc();
         
-        System.out.println("El valor del IMC es " + imc.calcular(u));
     }
 }

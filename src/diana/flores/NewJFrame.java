@@ -10,9 +10,7 @@ package diana.flores;
  * @author YOO
  */
 public class NewJFrame extends javax.swing.JFrame {
-    String textoPeso;
-    String textoAltura;
-   
+       
     /**
      * Creates new form NewJFrame
      */
@@ -45,6 +43,11 @@ public class NewJFrame extends javax.swing.JFrame {
         textoPeso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 textoPesoActionPerformed(evt);
+            }
+        });
+        textoPeso.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                textoPesoPropertyChange(evt);
             }
         });
 
@@ -120,20 +123,16 @@ public class NewJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
        
         //Comvertir a flotante
-        float peso = Float.parseFloat(tPeso);
-        float altura = Float.parseFloat(tAltura);
-        
-        Usuario u = new Usuario();
         
         //Le asignamos valores
-        u.altura = altura;
-        u.peso = peso;
-        
+                
         //Generamos el modelo
-        Imc imc = new Imc();
-        
-        etiquetaResultado.setText("El valor del IMC es " + imc.calcular(u));        
+                
     }//GEN-LAST:event_botonCalcularActionPerformed
+
+    private void textoPesoPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_textoPesoPropertyChange
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textoPesoPropertyChange
 
     /**
      * @param args the command line arguments
