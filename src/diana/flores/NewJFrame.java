@@ -134,8 +134,8 @@ public class NewJFrame extends javax.swing.JFrame {
         Usuario u = new Usuario();
         
         //Le asignamos valores
-        u.altura = altura;
-        u.peso = peso;
+        u.setAltura(altura);
+        u.setPeso(peso);
         
         //Generamos el modelo
         Imc imc = new Imc();

@@ -7,12 +7,12 @@ package diana.flores;
 
 /**
  *
- * @author T-
+ * @author YOO
  */
-public class Imc {
-    public float calcular(Usuario u){
-            //Va la Logica del calculo
-            float resultado = u.getPeso()/(u.getAltura()*u.getAltura());
-            return resultado;
-    }    
+public class NumeroNoNegativoException extends Exception{
+    
+    public NumeroNoNegativoException(){
+
+		super("No puedes meter numeros negativos");
+	}
 }
